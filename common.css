@@ -1,0 +1,58 @@
+:root.darkmode {
+  --bg: #15202B;
+  --tx: #F7F9F9;
+  --sb: #1f8aaf;
+  --as: #fadf66;
+}
+:root.lightmode{
+  --bg: rgb(255, 255, 255);
+  --tx: rgb(15, 20, 25);
+  --sb: rgb(50, 255, 255);
+  --as: rgb(26, 102, 156);
+}
+html{
+  background: var(--bg);
+  color: var(--tx);
+  transition: 0.75s ease-in-out;
+  margin: 0;
+}
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: inline
+}
+table{
+  border: 1px solid var(--sb);
+  border-collapse: collapse;
+}
+th,td{
+  border: 1px solid var(--sb);
+}
+header{
+  position: fixed;
+  margin: 0;
+  padding: 20px 0;
+  background-color: var(--sb);
+  width: 100vw
+}
+h1{
+  margin: 0;
+}
+span{
+  display: block;
+  margin-top:70px;
+}
+h2{
+ border-bottom: 2px solid;
+  border-image: linear-gradient(to right , var(--sb) 0% , var(--as) 100% ) 1;
+  margin: 0;
+  padding: 20px;
+}
+ul > li::marker{
+  color: var(--as)
+}
+ul > li > ul > li::marker{
+  color: var(--sb)
+}
+
