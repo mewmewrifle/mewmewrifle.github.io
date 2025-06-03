@@ -56,5 +56,5 @@ ul > li > ul > li::marker{
   color: var(--sb)
 }
 img{
-  width: 100vw
+  width: 100vw;
 }
