@@ -1,0 +1,84 @@
+:root{
+  --bg: #ffeeee;
+  --tx: #222;
+}
+:root.dark{
+  --bg: #1b0000;
+  --tx: #ddd;
+}
+body,p,h1,h2,h3,h4,h5,h6,button,ul{
+  margin: 0;
+  padding:0;
+}
+body{
+  background: var(--bg);
+  color: var(--tx)
+}
+.content{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+html.dark .toggleButton{
+  color: green;
+}
+  .toggleButton::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--tx);
+  border-radius: 50%;
+  margin-top: 2vh;
+}
+.toggleButton::after{
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--tx);
+  border-radius: 50%;
+  margin-left: 0.8vw;
+  margin-top: 2vh;
+}
+
+
+.toggleButton{
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  width: 6vh;
+  height: 6vh;
+  border: none;
+  display: flex;
+  background-color: unset;
+}
+
+.textwindow{
+  margin: 0 auto;
+  margin-top: 2vh;
+  width: 60vw;
+  height: 30vh;
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 0 1vmax;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-color: #f00 #0000
+}
+.button{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 2vh;
+  width: 7vw;
+  height: 9vh;
+}
+.btxt{
+  display: inline-flex;
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7vmax
+}
