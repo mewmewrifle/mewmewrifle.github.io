@@ -1,0 +1,91 @@
+body,h1{
+  margin: 0;
+}
+body{
+  color: #ddd;
+  background-color: #14202B;
+  overflow: hidden;
+}
+span{
+  display: block;
+}
+label{
+  display: block;
+}
+h1{
+  display: inline-block;
+}
+.textoutput{
+  font-size: 23px;
+  display: inline-block;
+  white-space: pre-wrap;
+  overflow: scroll;
+}
+.container{
+  display: flex;
+}
+input , textarea{
+  background: #00467c;
+  color: #ddd;
+}
+.writearea{
+  height: 100vh;
+  width: 50%;
+  background: #000069;
+  position: relative;
+}
+.outarea{
+  height: 1122px;
+  width: 1000px; 
+  background: #1a669c;
+  position: relative;
+  overflow: hidden;
+}
+.title , .save, .text,.load{
+  font-size: 20px;
+  margin-top: 1vh;
+  margin-left: 30px;
+}
+div.title , div.heading{
+  height: 10vh
+}
+input.title , div.save,div.load{
+  margin-top: 10px;
+  margin-left: 0;
+}
+input.title{
+  width: 90%;
+}
+div.text{
+  height: 70vh;
+}
+textarea.text{
+  margin-left: 0;
+  resize: none;
+  height: 63vh;
+  width: 90%;
+}
+button.save,button.load{
+  display: flex;
+  margin: 0 auto;
+}
+.output{
+  margin: 10px 1vw;
+
+}
+.output.headput{
+  height: 5vh;
+}
+.output.textput{
+  height: 93vh;
+    overflow: scroll;
+  scrollbar-color: #f00 #0000;
+}
+
+#box{
+  transform: translate3d(0px,0vh,0px)
+}
+
+.none,#none{
+  display: none !important;
+}
